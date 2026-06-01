@@ -1,0 +1,17 @@
+def test_stack():
+    stack = StackWithQueues()
+
+    try:
+        print("Тестирование стека:")
+
+        stack.push(1)
+        stack.push(2)
+        stack.push(3)
+
+        print(f"Удален элемент: {stack.pop()}")  # 3
+        print(f"Удален элемент: {stack.pop()}")  # 2
+
+    except IndexError as e:
+        print(f"Ошибка: {e}")
+
+test_stack()
